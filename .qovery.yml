@@ -18,6 +18,6 @@ databases:
 
 environment_variables:
   - key: "DATABASE_URL"
-    value: "postgresql://username:password@formbricks-db:5432/formbricks?schema=public"
+    value: "postgresql://qoveryadmin:VcScg4DNw0VwngOr7q-jR5q5jrPrNEyR@z4d912b46-postgresql.z3b4f6664.xmx.sh:5432/formbricks?schema=public"
   # Add other environment variables here
 
