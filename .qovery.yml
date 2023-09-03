@@ -1,0 +1,23 @@
+application:
+  name: "formbricks-app"
+  project: "formbricks-project"
+  organization: "your-org"
+  publicly_accessible: true
+
+routers:
+  - name: "main-router"
+    routes:
+      - application_name: "formbricks-app"
+        paths:
+          - "/*"
+
+databases:
+  - type: "postgresql"
+    name: "formbricks-db"
+    version: "15"
+
+environment_variables:
+  - key: "DATABASE_URL"
+    value: "postgresql://username:password@formbricks-db:5432/formbricks?schema=public"
+  # Add other environment variables here
+
